@@ -25,8 +25,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Hello! Bot is working.")
 
 if __name__ == '__main__':
-    # Bot Token Configuration
-    TOKEN = os.environ.get("BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN_HERE")
+    # Direct Bot Token
+    TOKEN = "8893716569:AAEVseUecLvH7mxqOpCAUfKU73NiYGeSbm8"
     
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
